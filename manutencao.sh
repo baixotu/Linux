@@ -4,7 +4,6 @@
 # chmod +x manutencao.sh
 # Escrito no VI.
 # @baixotu 14/08/2021. 
-
 if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 apt update
 apt upgrade
@@ -19,6 +18,5 @@ cd /var/log/apt
 rm -f *.gz
 mandb
 updatedb
-fi
 exit 0
 
